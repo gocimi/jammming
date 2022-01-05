@@ -12,6 +12,26 @@ const Spotify = {
         } else {
             window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&response_type=${responseType}&state=123`;
         }
+    },
+
+    search(term) {
+        return [
+            {
+                name: 'Gonzalo',
+                artist: 'Pepe',
+                album: 'primero'
+            },
+            {
+                name: 'Gonzalo',
+                artist: 'Pepe',
+                album: 'Segundo'
+            },
+            {
+                name: 'Gonzalo',
+                artist: 'Pepe',
+                album: 'Tercero'
+            }
+        ]
     }
 
 }
